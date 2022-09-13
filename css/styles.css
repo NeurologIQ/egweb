@@ -60,7 +60,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #000;
+  --bs-body-color-black: #000
   --bs-body-bg: #fff;
 }
 
@@ -110,10 +111,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  color: #000
 }
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
+    text-align: center
   }
 }
 
@@ -235,11 +238,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #3aad0f;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #3aad0f;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2488,7 +2491,7 @@ textarea.form-control-lg {
      -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+          -color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -3046,24 +3049,24 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #3aad0f;
+  border-color: #3aad0f;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #3aad0f;
+  border-color: #3aad0f;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #3aad0f;
+  border-color: #3aad0f;
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  background-color: #3aad0f;
+  border-color: #3aad0f;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
@@ -3486,11 +3489,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #3aad0f;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #3aad0f;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3958,7 +3961,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #3aad0f;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3968,7 +3971,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #000;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4558,8 +4561,8 @@ textarea.form-control-lg {
 }
 
 .card-body {
-  flex: 1 1 auto;
   padding: 1rem 1rem;
+  background-color: #3aad0f;
 }
 
 .card-title {
@@ -4582,7 +4585,7 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #3aad0f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
@@ -4850,9 +4853,10 @@ textarea.form-control-lg {
 .page-item.active .page-link, .page-item.active .dataTable-pagination a, .dataTable-pagination .page-item.active a, .dataTable-pagination li.active .page-link, .dataTable-pagination li.active a {
   z-index: 3;
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #01488A;
+  border-color: #01488A;
 }
+
 .page-item.disabled .page-link, .page-item.disabled .dataTable-pagination a, .dataTable-pagination .page-item.disabled a, .dataTable-pagination li.disabled .page-link, .dataTable-pagination li.disabled a {
   color: #6c757d;
   pointer-events: none;
@@ -11420,7 +11424,7 @@ body {
 
 .sb-topnav {
   padding-left: 0;
-  height: 56px;
+  height: 85px;
   z-index: 1039;
 }
 .sb-topnav .navbar-brand {
@@ -11481,7 +11485,7 @@ body {
 }
 
 .sb-sidenav-dark {
-  background-color: #212529;
+  background-color: #343a40;
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
@@ -11586,13 +11590,13 @@ body {
 
 /* PAGER */
 .dataTable-pagination a:hover {
-  background-color: #e9ecef;
+  background-color: #fff;
 }
 
 .dataTable-pagination .active a,
 .dataTable-pagination .active a:focus,
 .dataTable-pagination .active a:hover {
-  background-color: #0d6efd;
+  background-color: #01488A;
 }
 
 .dataTable-pagination .ellipsis a,
